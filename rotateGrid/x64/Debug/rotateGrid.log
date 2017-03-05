@@ -1,0 +1,4 @@
+﻿  crypto.cpp
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypto.cpp(14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  rotateGrid.vcxproj -> C:\Users\1-PC\documents\visual studio 2015\Projects\rotategrid\x64\Debug\rotateGrid.exe
+  rotateGrid.vcxproj -> C:\Users\1-PC\documents\visual studio 2015\Projects\rotategrid\x64\Debug\rotateGrid.pdb (Full PDB)
