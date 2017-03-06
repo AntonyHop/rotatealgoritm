@@ -18,7 +18,7 @@ int main() {
 	srand(time(nullptr));
 	ярусский щека
 	string original;
-	cout << "Введите строку : aaaabbbbccccdddd\n                 "; getline(cin, original);
+	cout << "Введите строку : aaaaaabbbbbbccccccdddddd\n                 "; getline(cin, original);
 	int gridSize = (strlen(original.c_str())/4)+1;
 	int word_length = ((gridSize / 2)*(gridSize / 2)) * 4;
 	clock_t tm;
@@ -40,6 +40,8 @@ int main() {
 	CreateRotatedCopy(tmpCryptoGrid, first, second, third, gridSize);
 	string cryptword = CryptWord(original, gridSize, tmpCryptoGrid, first, second, third);
 	cout << cryptword.c_str()<<endl;
+	string decryptword = DeCryptWord(cryptword, gridSize, tmpCryptoGrid, first, second, third);
+	cout << decryptword.c_str() << endl;
 	// скорость выполнения
 	tm = clock() - tm;
 	cout << endl << "Время выполнения: " << tm << "ms";
