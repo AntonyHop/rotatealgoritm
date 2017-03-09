@@ -1,4 +1,8 @@
 ﻿  crypto.cpp
-c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypto.cpp(14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(5): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(111): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(125): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(139): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypto.cpp(18): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   rotateGrid.vcxproj -> C:\Users\1-PC\documents\visual studio 2015\Projects\rotategrid\x64\Debug\rotateGrid.exe
   rotateGrid.vcxproj -> C:\Users\1-PC\documents\visual studio 2015\Projects\rotategrid\x64\Debug\rotateGrid.pdb (Full PDB)

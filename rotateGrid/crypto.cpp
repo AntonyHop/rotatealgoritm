@@ -18,36 +18,52 @@ int main() {
 	srand(time(nullptr));
 	ярусский щека
 	string original;
-	cout << "Введите строку : aaaaaabbbbbbccccccdddddd\n                 "; getline(cin, original);
-	int gridSize = (strlen(original.c_str())/4)+1;
+	int gridSize;
+	cout << "Введите размерность шифровального масива:";
+	cin >> gridSize;
+	cin.get();
+	cout << "Введите строку :\n";
 	int word_length = ((gridSize / 2)*(gridSize / 2)) * 4;
+	for (int i = 0; i < word_length; i++) {
+		cout << "a";
+	}
+	cout <<endl;
+	getline(cin, original);
+	
 	clock_t tm;
 	tm = clock();
-	
-	while(original.size() % 4 != 0) {
-		original += "N";
-		word_length++;
-		cout << "ok";
-	}
+	if (original.size() <= word_length) {
+		//Заполняем недостающие символы
+		while (original.size() <= word_length) {
+			original += char(32);
+		}
 
-	int **tmpCryptoGrid = new int*[gridSize];//поворот на 0
-	int **first = new int*[gridSize];//поворот на -90
-	int **second = new int*[gridSize];//поворот на -180
-	int **third = new int*[gridSize];//поворот на -270
-	//создаем шаблон
-	CerateTemplate(tmpCryptoGrid, gridSize);
-	//поворот копии масива
-	CreateRotatedCopy(tmpCryptoGrid, first, second, third, gridSize);
-	string cryptword = CryptWord(original, gridSize, tmpCryptoGrid, first, second, third);
-	cout << cryptword.c_str()<<endl;
-	string decryptword = DeCryptWord(cryptword, gridSize, tmpCryptoGrid, first, second, third);
-	cout << decryptword.c_str() << endl;
-	// скорость выполнения
-	tm = clock() - tm;
-	cout << endl << "Время выполнения: " << tm << "ms";
-	//выбросить мусор
-	ThrowTheTrush(gridSize, tmpCryptoGrid, first, second, third);
-	system("pause");
-	system("cls");
+		//Выделяем память под масивы
+		int **tmpCryptoGrid = new int*[gridSize];//поворот на 0
+		int **first = new int*[gridSize];//поворот на -90
+		int **second = new int*[gridSize];//поворот на -180
+		int **third = new int*[gridSize];//поворот на -270
+		//создаем шаблон
+		CerateTemplate(tmpCryptoGrid, gridSize);
+		//поворот копии масива
+		CreateRotatedCopy(tmpCryptoGrid, first, second, third, gridSize);
+		string cryptword = CryptWord(original, gridSize, tmpCryptoGrid, first, second, third);
+		cout << "Шифровка:\n";
+		cout << cryptword.c_str() << endl;
+		string decryptword = DeCryptWord(cryptword, gridSize, tmpCryptoGrid, first, second, third);
+		cout << "Розшифровка:\n";
+		cout << decryptword.c_str() << endl;
+		// скорость выполнения
+		tm = clock() - tm;
+		cout << endl << "Время выполнения: " << tm << "ms";
+		//выбросить мусор
+		ThrowTheTrush(gridSize, tmpCryptoGrid, first, second, third);
+	}
+	else{
+		system("cls");
+		cout << "Вы привысили лимит на количество символов попробуйте задать большую розмерность\n";
+		return main();
+	}
+	cin.get();
 	return 0;
 }

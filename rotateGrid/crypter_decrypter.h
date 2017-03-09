@@ -4,36 +4,32 @@
 string CryptWord(string original, int gridSize, int **first, int **second, int **third, int **four) {
 	int word_length = strlen(original.c_str());
 	int i = 0;
-
-	cout << word_length << endl;
-	cout << gridSize << endl;
-	cout << original << endl;
 	string first_part;
 	string second_part;
 	string third_part;
 	string four_part;
 	string result;
 
-	cout << word_length<<endl;
+	//cout << word_length<<endl;
 	for (int i = 0; i < 1*(word_length/4); i++) {
 		first_part += original[i];
 	}
-	cout << first_part << endl;
+	//cout << first_part << endl;
 
 	for (int i = 1 * (word_length / 4); i < 2 * (word_length / 4); i++) {
 		second_part += original[i];
 	}
-	cout << second_part << endl;
+	//cout << second_part << endl;
 
 	for (int i = 2 * (word_length / 4); i < 3 * (word_length / 4); i++) {
 		third_part += original[i];
 	}
-	cout << third_part << endl;
+	//cout << third_part << endl;
 
 	for (int i = 3 * (word_length / 4); i < 4 * (word_length / 4); i++) {
 		four_part += original[i];
 	}
-	cout << four_part << endl;
+	//cout << four_part << endl;
 	//ShowGrid(first,gridSize);
 	int counter = 0;
 	for (int i = 0; i < gridSize; i++) {
@@ -44,7 +40,7 @@ string CryptWord(string original, int gridSize, int **first, int **second, int *
 				counter++;
 			}
 			else {
-				result += char(10+rand()%30);
+				result += char(97 + rand() % 122);
 			}
 		}
 	}
@@ -58,7 +54,7 @@ string CryptWord(string original, int gridSize, int **first, int **second, int *
 				counter++;
 			}
 			else {
-				result += char(10+rand()%30);
+				result += char(97 + rand() % 122);
 			}
 		}
 	}
@@ -71,7 +67,7 @@ string CryptWord(string original, int gridSize, int **first, int **second, int *
 				counter++;
 			}
 			else {
-				result += char(10+rand()%30);
+				result += char(97 + rand() % 122);
 			}
 		}
 	}
@@ -84,7 +80,7 @@ string CryptWord(string original, int gridSize, int **first, int **second, int *
 				counter++;
 			}
 			else {
-				result += char(10+rand()%30);
+				result += char(97 + rand() % 122);
 			}
 		}
 	}
