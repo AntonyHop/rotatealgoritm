@@ -35,7 +35,7 @@ int main() {
 	if (original.size() <= word_length) {
 		//Заполняем недостающие символы
 		while (original.size() <= word_length) {
-			original += char(32);
+			original += ' ';
 		}
 
 		//Выделяем память под масивы
