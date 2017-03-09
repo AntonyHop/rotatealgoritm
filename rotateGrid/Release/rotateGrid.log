@@ -1,0 +1,21 @@
+﻿  crypto.cpp
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(37): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(51): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(64): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(77): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(98): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(104): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(111): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(117): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(125): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(131): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(139): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypter_decrypter.h(145): warning C4018: <: несоответствие типов со знаком и без знака
+crypto.cpp(18): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+crypto.cpp(35): warning C4018: <=: несоответствие типов со знаком и без знака
+crypto.cpp(37): warning C4018: <=: несоответствие типов со знаком и без знака
+  Создание кода
+  All 116 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  rotateGrid.vcxproj -> C:\Users\1-PC\documents\visual studio 2015\Projects\rotategrid\Release\rotateGrid.exe
+  rotateGrid.vcxproj -> C:\Users\1-PC\documents\visual studio 2015\Projects\rotategrid\Release\rotateGrid.pdb (Full PDB)
