@@ -3,6 +3,7 @@
 #pragma once
 string CryptWord(string original, int gridSize, int **first, int **second, int **third, int **four) {
 	int word_length = strlen(original.c_str());
+	char ab[24] = "abcdefgjklmnoprstuvwxyz";
 	int i = 0;
 	string first_part;
 	string second_part;
@@ -40,7 +41,7 @@ string CryptWord(string original, int gridSize, int **first, int **second, int *
 				counter++;
 			}
 			else {
-				result += char(97 + rand() % 122);
+				result += ab[1+rand()%23];
 			}
 		}
 	}
@@ -54,7 +55,7 @@ string CryptWord(string original, int gridSize, int **first, int **second, int *
 				counter++;
 			}
 			else {
-				result += char(97 + rand() % 122);
+				result += ab[1 + rand() % 23];
 			}
 		}
 	}
@@ -67,7 +68,7 @@ string CryptWord(string original, int gridSize, int **first, int **second, int *
 				counter++;
 			}
 			else {
-				result += char(97 + rand() % 122);
+				result += ab[1 + rand() % 23];
 			}
 		}
 	}
@@ -80,7 +81,7 @@ string CryptWord(string original, int gridSize, int **first, int **second, int *
 				counter++;
 			}
 			else {
-				result += char(97 + rand() % 122);
+				result += ab[1 + rand() % 23];
 			}
 		}
 	}

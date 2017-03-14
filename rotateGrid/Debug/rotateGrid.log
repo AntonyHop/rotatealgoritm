@@ -14,5 +14,5 @@ c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypte
 c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypto.cpp(18): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
 c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypto.cpp(35): warning C4018: <=: несоответствие типов со знаком и без знака
 c:\users\1-pc\documents\visual studio 2015\projects\rotategrid\rotategrid\crypto.cpp(37): warning C4018: <=: несоответствие типов со знаком и без знака
-  rotateGrid.vcxproj -> C:\Users\1-PC\documents\visual studio 2015\Projects\rotategrid\Debug\rotateGrid.exe
-  rotateGrid.vcxproj -> C:\Users\1-PC\documents\visual studio 2015\Projects\rotategrid\Debug\rotateGrid.pdb (Full PDB)
+  rotateGrid.vcxproj -> C:\Users\1-PC\Documents\Visual Studio 2015\Projects\rotateGrid\Debug\rotateGrid.exe
+  rotateGrid.vcxproj -> C:\Users\1-PC\Documents\Visual Studio 2015\Projects\rotateGrid\Debug\rotateGrid.pdb (Full PDB)
